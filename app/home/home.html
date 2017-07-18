@@ -1,0 +1,15 @@
+<div class="row" ng-init="loadPosts()">
+    <div ng-repeat="post in posts" class="thumbnail col-xs-12 col-sm-6 col-md-3">
+        <div class="post">
+            <span class="post-meta">18/7/2017</span>
+            <div class="post-feature">
+                <a  href="#!posts/{{post._id}}">
+                    <img ng-src="{{SERVER_URL}}uploads/{{post.feature}}">
+                </a>
+            </div>
+            <h5 class="post-title">
+                <a href="#!posts/{{post._id}}">{{post.title}}</a>
+            </h5>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="single-post" ng-init="loadPost()">
+    <div class="single-post-feature">
+        <img src="{{SERVER_URL}}uploads/{{post.feature}}">
+    </div>
+    <h1 class="single-post-title">{{post.title}}
+    </h1>
+    <div class="single-post-meta">
+        <span class="created-date">Posted at: {{post.created_at | amDateFormat:'YYYY/MM/DD'}}</span>
+    </div>
+    <div class="single-post-content">
+        {{post.content}}
+    </div>
+</div>
